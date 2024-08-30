@@ -10,6 +10,9 @@ contract Game4 {
     unchecked {
         uint8 sum = x + y;
         require(sum == 10, "Incorrect argument passed in!");
+        // (x + 210) % 256 = 10
+        // 266 % 256 = 10
+        // x = 56
     }
     emit Winner(msg.sender);
   }
